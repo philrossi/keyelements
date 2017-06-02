@@ -1,0 +1,153 @@
+/*normalize*/
+html {
+font: 100%/1.15, sans-serif;
+}
+body {
+margin: 0;
+}
+header {
+display: block;
+}
+/*main section - background color*/
+
+/*main section - mobile first*/
+.mobilefirst {
+background-color: #fc0;
+}
+/*main section - fluid grids */
+.fluidgrid {
+background-color: #fc4;
+}
+/*main section - flexible img*/
+.flexibleimg {
+background-color: #fc6;
+}
+/*main section - media queries*/
+.mediaqueries {
+background-color: #fc9;
+}
+
+
+/*header of article*/
+.max-header {
+  position: relative;
+  margin: 0 auto;
+  max-width: 60em;
+}
+.max-width {
+  position: relative;
+  margin: 0 auto;
+}
+section {
+  display: grid;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.gallery {
+  list-style: none;
+  padding-left: 0;
+}
+/*body of artice*/
+
+
+/*header*/
+header {
+  background: #eee;
+  border-bottom: 3px solid #999;
+}
+header h1 {
+  font: normal normal 2em/1.25 Tahoma, sans-serif;
+  text-transform: capitalize;
+  margin: 0 1em;
+  padding-top: 1em;
+}
+header p {
+  font: normal normal 1em/1.375 "Times New Roman", serif;
+  margin: 0 2em;
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+/*section*/
+ol {
+  padding-left: 0;
+  margin: 0;
+}
+li {
+  padding-bottom: 2em;
+}
+li h2 {
+  font: normal normal 1.625em/1.15 Tahoma, serif;
+  margin: 1em 1em;
+}
+li p {
+  font: normal normal 1em/1.375 "Time New Roman", sans-serif;
+}
+.mobilefirstp,
+.fluidgridp,
+.fleximgp,
+.mediaqueriesp  {
+  margin: 0 2em;
+}
+
+/*details and summary*/
+  details {
+    padding-top: 2em;
+    text-align: center;
+    align-self: end;
+  }
+  summary {
+    font: normal normal 1.1em/1.375 Tahoma, serif;
+    background-color: #eee;
+    border: 1px solid #999;
+    margin: 0 2em;
+    padding: 1em;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  details p {
+    font: normal normal 1.1em/1.375 monospace;
+    color: #063;
+    background-color: #fcf;
+    padding: 2em;
+
+  }
+
+@supports (display: grid) {
+  .gallery {
+    position: static;
+    left: 0;
+    display: grid;
+    width: auto;
+
+  }
+  .gallery li {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+}
+
+@media (min-width: 29em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: .5em;
+  }
+  header h1 {
+    font-size: 3m;
+    line-height: 1.15em;
+  }
+  li h2 {
+    font-size: 1.75em;
+    line-height: 1.25em;
+  }
+}
+
+@media (min-width: 56em) {
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
