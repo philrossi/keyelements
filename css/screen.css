@@ -12,19 +12,19 @@ display: block;
 
 /*main section - mobile first*/
 .mobilefirst {
-background-color: #fc0;
+background-color: #fc5;
 }
 /*main section - fluid grids */
 .fluidgrid {
-background-color: #fc4;
+background-color: #fc7;
 }
 /*main section - flexible img*/
 .flexibleimg {
-background-color: #fc6;
+background-color: #fc9;
 }
 /*main section - media queries*/
 .mediaqueries {
-background-color: #fc9;
+background-color: #fcc;
 }
 
 
